@@ -38,7 +38,7 @@ class Employee {
     public int getSalary(int id) {
         int index = getIndex(id);
         if(index == -1) return -1;
-        return (basic[index] + hra[index] + it[index] + calcDA(index));
+        return (basic[index] + hra[index] - it[index] + calcDA(index));
     }
 
     public String getName(int id) {
