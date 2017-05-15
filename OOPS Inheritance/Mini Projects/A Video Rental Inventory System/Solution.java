@@ -32,8 +32,8 @@ class Video {
     }
 
     void rateVideo(double user_rating) {
+        rating = ((rating*count) + user_rating)/(count + 1);
         count++;
-        rating = (rating + user_rating)/count;
     }
 
     String getTitle() {
