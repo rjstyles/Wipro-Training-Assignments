@@ -106,8 +106,8 @@ class VideoStore {
                 System.out.printf("%6s     ", "Yes");
             else
                 System.out.printf("%6s     ", "No");
+            System.out.println("\n");
         }
-        System.out.println("\n");
     }
 }
 
